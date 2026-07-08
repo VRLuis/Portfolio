@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #0d1117;
+    --card-color: #161b22;
+    --main-text-color: #c9d1d9;
+    --secondary-text-color: #8b949e;
+    --accent-color: #58a6ff;
+    
+}
+
+@theme {
+    --color-primary: var(--primary-color);
+    --color-card: var(--card-color);
+    --color-main-text: var(--main-text-color);
+    --color-secondary-text: var(--secondary-text-color);
+    --color-accent: var(--accent-color);
+}

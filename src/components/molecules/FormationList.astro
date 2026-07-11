@@ -1,0 +1,17 @@
+---
+import FormationCard from "../atoms/FormationCard.astro";
+
+const { formations = [] } = Astro.props;
+---
+
+<div class="mt-8 flex flex-wrap gap-4 justify-around">
+    {formations.map((formation: FormationInterface) => (
+        <FormationCard
+            centerName={formation.centerName}
+            formationName={formation.formationName}
+            startDate={formation.startDate}
+            endDate={formation.endDate}
+            formationLocation={formation.formationLocation}
+        />
+    ))}
+</div>

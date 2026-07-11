@@ -1,0 +1,76 @@
+[
+    {
+        "experienceCompany": "OBI",
+        "companyLogo": "obi-logo.jpeg",
+        "experienceTitle": "Cloud Infrastructure and Platform Engineer Trainee",
+        "experienceDescription": [
+            "Managed Kubernetes clusters across AWS and GCP to ensure high availability for enterprise services.",
+            "Applied AI-Driven Development to standardize code quality and streamline large-scale infrastructure.",
+            "Developed 'Service-Generator', an AI-powered tool that automated service creation and optimized internal workflows."
+        ],
+        "experienceDateStart": "02/2026",
+        "experienceDateEnd": "05/2026",
+        "experienceLocation": "Köln, Germany",
+        "experienceTechnologies": [
+            "Arquitectura de software",
+            "Desarrollo de software con IA",
+            "Kubernetes",
+            "Infraestructura de software",
+            "Cloud Computing IaaS",
+            "Integración continua y entrega continua (CI/CD)"
+        ]
+    },
+    {
+        "experienceCompany": "Properly Sl",
+        "companyLogo": "properly-logo.jpeg",
+        "experienceTitle": "FullStack Developer",
+        "experienceDescription": [
+            "Developed 3 CRUD modules using Jmix and SpringBoot, integrating PostgreSQL; improved internal dataworkflows and reduced manual data-entry steps.",
+            "Implemented backend REST endpoints and collaborated on ERP data models and business logic.",
+            "Performed code reviews and participated in sprint planning and deliveries."
+        ],
+        "experienceDateStart": "04/2025",
+        "experienceDateEnd": "09/2025",
+        "experienceLocation": "Malaga, Spain",
+        "experienceTechnologies": [
+            "JavaScript",
+            "jmix",
+            "PostgreSQL",
+            "Vaadin",
+            "JSON",
+            "Git",
+            "Java",
+            "Springboot",
+            "Aplicaciones web",
+            "Diseño de la interfaz de usuario",
+            "Desarrollo de API",
+            "XML",
+            "HTML5",
+            "Desarrollo front end"
+        ]
+    },
+    {
+        "experienceCompany": "Redes y Componentes Informáticos S.L",
+        "companyLogo": "default-company-logo.png",
+        "experienceTitle": "Auxiliar informático",
+        "experienceDescription": [
+            "- Designed and implemented desktop UI componentsand features for internal applications.",
+            "- Performed debugging, testing and collaborated withthe team to improve overall user experience.",
+            "- Contributed to migration and modularization efforts across several projects."
+        ],
+        "experienceDateStart": "06/2024",
+        "experienceDateEnd": "08/2024",
+        "experienceLocation": "Puente Genil, Cordoba, Spain",
+        "experienceTechnologies": [
+            "Implementación de software",
+            "Soporte técnico",
+            "JavaScript",
+            "JSON",
+            "Gestión informática",
+            "Resolución colaborativa de problemas",
+            "Diseño de la interfaz de usuario",
+            "XML",
+            "HTML5"
+        ]
+    }
+]

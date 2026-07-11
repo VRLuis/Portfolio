@@ -1,0 +1,20 @@
+---
+import ExperienceCard from "../atoms/ExperienceCard.astro";
+
+const { experiences = [] } = Astro.props;
+---
+
+<div class="mt-8 flex flex-wrap gap-4 justify-around">
+    {experiences.map((experience: ExperienceInterface) => (
+        <ExperienceCard
+            experienceCompany={experience.experienceCompany}
+            experienceTitle={experience.experienceTitle}
+            experienceDescription={experience.experienceDescription}
+            experienceDateStart={experience.experienceDateStart}
+            experienceDateEnd={experience.experienceDateEnd}
+            experienceLocation={experience.experienceLocation}
+            experienceTechnologies={experience.experienceTechnologies}
+            companyLogo={experience.companyLogo}
+        />
+    ))}
+</div>

@@ -6,7 +6,7 @@
     --main-text-color: #c9d1d9;
     --secondary-text-color: #8b949e;
     --accent-color: #58a6ff;
-    
+    --secondary-accent-color: #366ece;
 }
 
 @theme {
@@ -15,4 +15,5 @@
     --color-main-text: var(--main-text-color);
     --color-secondary-text: var(--secondary-text-color);
     --color-accent: var(--accent-color);
+    --color-secondary-accent: var(--secondary-accent-color);
 }

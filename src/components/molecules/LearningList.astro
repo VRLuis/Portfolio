@@ -1,0 +1,15 @@
+---
+import LearningCard from "../atoms/LearningCard.astro";
+
+const { learningData = [] } = Astro.props;
+---
+
+<div class="mt-8 flex flex-wrap gap-4 justify-around">
+    {learningData.map((learning: LearningInterface) => (
+        <LearningCard
+            learningName={learning.name}
+            learningDescription={learning.description}
+            learningIcon={learning.icon}
+        />
+    ))}
+</div>

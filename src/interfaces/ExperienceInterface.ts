@@ -7,4 +7,5 @@ interface ExperienceInterface {
     experienceDateEnd: string;
     experienceLocation: string;
     experienceTechnologies: string[];
-}
+    milestones: MilestoneInterface | null;
+};

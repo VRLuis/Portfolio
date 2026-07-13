@@ -18,6 +18,20 @@
             "Infraestructura de software",
             "Cloud Computing IaaS",
             "Integración continua y entrega continua (CI/CD)"
+        ],
+        "milestones": [
+            {
+                "milestoneName": "Service-Generator",
+                "milestoneDescription": "An AI-powered tool that automates service creation and optimizes internal workflows.",
+                "milestoneTechnologies": [
+                    "React",
+                    "OpenAI API",
+                    "Node Js",
+                    "Typescript",
+                    "Gitlab",
+                    "CI/CD"
+                ]
+            }
         ]
     },
     {
@@ -47,6 +61,19 @@
             "XML",
             "HTML5",
             "Desarrollo front end"
+        ],
+        "milestones": [
+            {
+                "milestoneName": "AI Readiness Assessment Tool",
+                "milestoneDescription": "An AI-powered tool that automates the bills reading process by automating the data entry and validation steps.",
+                "milestoneTechnologies": [
+                    "Jmix",
+                    "Java",
+                    "SpringBoot",
+                    "PostgreSQL",
+                    "Google AI Studio"
+                ]
+            }
         ]
     },
     {
@@ -54,9 +81,9 @@
         "companyLogo": "default-company-logo.png",
         "experienceTitle": "Auxiliar informático",
         "experienceDescription": [
-            "- Designed and implemented desktop UI componentsand features for internal applications.",
-            "- Performed debugging, testing and collaborated withthe team to improve overall user experience.",
-            "- Contributed to migration and modularization efforts across several projects."
+            "Designed and implemented desktop UI componentsand features for internal applications.",
+            "Performed debugging, testing and collaborated withthe team to improve overall user experience.",
+            "Contributed to migration and modularization efforts across several projects."
         ],
         "experienceDateStart": "06/2024",
         "experienceDateEnd": "08/2024",

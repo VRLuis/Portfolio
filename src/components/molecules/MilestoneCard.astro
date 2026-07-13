@@ -1,0 +1,19 @@
+---
+import TechBudget from "../atoms/TechBudget.astro";
+
+const {
+    milestoneName,
+    milestoneDescription,
+    milestoneTechnologies
+} = Astro.props;
+---
+
+<div class="border-1 border-primary-text rounded-lg py-5 px-10 mt-5 bg-primary shadow-xl shadow-primary">
+    <h1 class="text-2xl font-bold">{milestoneName}</h1>
+    <p>{milestoneDescription}</p>
+    <div class="flex flex-wrap gap-2 mt-2">
+        { milestoneTechnologies.map((tech: string) => (
+            <TechBudget tech={tech}/>
+        )) }
+    </div>
+</div>

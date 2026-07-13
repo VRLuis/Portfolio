@@ -1,0 +1,20 @@
+---
+const {
+    companyLogo,
+    experienceCompany,
+    experienceDateStart,
+    experienceDateEnd,
+    experienceLocation
+} = Astro.props;
+---
+
+<div>
+    <div class="flex items-center gap-2 mb-2">
+        <img src={companyLogo} alt={experienceCompany} class="max-h-12 object-contain" />
+        <h2 class="text-lg font-semibold">{ experienceCompany }</h2>
+    </div>
+    <div class="mt-2">
+        <span class="text-sm text-secondary-text">{ experienceDateStart } - { experienceDateEnd }</span>
+        <h3 class="text-md font-medium">{ experienceLocation }</h3>
+    </div>
+</div>

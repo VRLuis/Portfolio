@@ -1,0 +1,148 @@
+---
+import CompanyHeader from "../atoms/CompanyHeader.astro";
+
+const { 
+    experienceCompany, 
+    experienceTitle, 
+    experienceDescription, 
+    experienceDateStart, 
+    experienceDateEnd, 
+    experienceLocation,
+    experienceTechnologies,   
+    companyLogo,
+	projects
+} = Astro.props;
+---
+
+<div class="experience-card w-3/5 bg-card p-5">
+    <h1 class="text-xl text-center font-bold mb-5">{ experienceTitle }</h1>
+    <CompanyHeader 
+      	experienceCompany={experienceCompany} 
+      	companyLogo={companyLogo} 
+		experienceDateStart={experienceDateStart} 
+      	experienceDateEnd={experienceDateEnd}
+		experienceLocation={experienceLocation}
+	/>
+    
+    <button class="open-dialog-btn cursor-pointer bg-accent text-main-text font-bold px-4 py-2 w-full rounded-lg hover:bg-secondary-accent transition-all mt-5">More info +</button>
+    
+    <dialog class="experience-dialog bg-card p-10 m-auto text-main-text w-1/2 rounded-lg shadowd-lg shadow-secondary-accent">
+        <div class="w-full mb-2 bg-card h-fit flex justify-between">
+            <h1 class="text-3xl font-bold">Info about the experience</h1>
+            <span class="border-main-text border-1 px-2 py-1 rounded-lg">ESC</span>
+        </div>
+        <hr>
+		<div class="w-full">
+			<h2></h2>
+		</div>
+        <div class="mt-5">
+            <p>
+				<ul class="list-disc">
+					{experienceDescription.map((description: string) => (
+						<li>{description}</li>
+					))}
+				</ul>
+            </p>
+            <p class="mt-2">
+                { experienceTechnologies.join(", ") }
+            </p>
+        </div>
+
+        <div>
+			{ }
+        </div>
+        
+        <div class="w-full h-fit flex justify-end">
+            <button class="close-dialog-btn bg-danger px-5 py-2 text-main-text rounded-xl cursor-pointer hover:bg-secondary-danger hover:translate-1 transition-all">Close</button>
+        </div>
+    </dialog>
+</div>
+
+<script>
+    const cards = document.querySelectorAll('.experience-card');
+
+    cards.forEach((card) => {
+        const openButton = card.querySelector('.open-dialog-btn') as HTMLButtonElement | null;
+        const closeButton = card.querySelector('.close-dialog-btn') as HTMLButtonElement | null;
+        const dialog = card.querySelector('.experience-dialog') as HTMLDialogElement | null;
+
+        openButton?.addEventListener('click', () => {
+            if (!dialog) return;
+            dialog.classList.remove('closing');
+            dialog.showModal();
+        });
+
+        closeButton?.addEventListener('click', () => {
+            if (!dialog) return;
+            dialog.classList.add('closing');
+
+            const onAnimationEnd = (event: AnimationEvent) => {
+                if (event.animationName !== 'dialog-close') return;
+                dialog.removeEventListener('animationend', onAnimationEnd);
+                dialog.close();
+            };
+
+            dialog.addEventListener('animationend', onAnimationEnd);
+        });
+    });
+</script>
+
+<style is:global>
+  .experience-dialog {
+    animation: dialog-pop 220ms ease-out forwards;
+  }
+
+  .experience-dialog.closing {
+    animation: dialog-close 200ms ease-in forwards;
+  }
+
+  .experience-dialog::backdrop {
+    background: var(--primary-color);
+    backdrop-filter: blur(6px);
+    animation: backdrop-fade 220ms ease-out forwards;
+  }
+
+  .experience-dialog.closing::backdrop {
+    animation: backdrop-fade-out 180ms ease-in forwards;
+  }
+
+  @keyframes dialog-pop {
+    from {
+      opacity: 0;
+      transform: scale(0.88) translateY(-2%);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  @keyframes dialog-close {
+    from {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.94) translateY(-1%);
+    }
+  }
+
+  @keyframes backdrop-fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes backdrop-fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+</style>

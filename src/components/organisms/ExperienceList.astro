@@ -1,5 +1,5 @@
 ---
-import ExperienceCard from "../atoms/ExperienceCard.astro";
+import ExperienceCard from "../molecules/ExperienceCard.astro";
 
 const { experiences = [] } = Astro.props;
 ---
@@ -15,6 +15,7 @@ const { experiences = [] } = Astro.props;
             experienceLocation={experience.experienceLocation}
             experienceTechnologies={experience.experienceTechnologies}
             companyLogo={experience.companyLogo}
+            projects={experience.projects}
         />
     ))}
 </div>

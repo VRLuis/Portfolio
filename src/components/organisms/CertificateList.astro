@@ -1,0 +1,16 @@
+---
+import CertificateCard from "../molecules/CertificateCard.astro";
+
+const { certificates = [] } = Astro.props;
+---
+
+<div class="mt-8 flex flex-wrap gap-4 justify-around max-h-200 overflow-y-auto">
+    {certificates.map((certificate: CertificateInterface) => (
+        <CertificateCard
+            certificateName={certificate.certificateName}
+            certificateDescription={certificate.certificateDescription}
+            certificateImage={certificate.certificateImage}
+            certificateLink={certificate.certificateLink}
+        />
+    ))}
+</div>

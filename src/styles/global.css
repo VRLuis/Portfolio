@@ -23,3 +23,35 @@
     --color-danger: var(--danger-color);
     --color-secondary-danger: var(--secondary-danger-color);
 }
+
+:root {
+    scroll-behavior: smooth;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--color-primary);
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-primary);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-accent);
+    border-radius: 9999px;
+    border: 2px solid var(--color-primary);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-secondary-accent);
+}
+
+*::-webkit-scrollbar-corner {
+    background: transparent;
+}

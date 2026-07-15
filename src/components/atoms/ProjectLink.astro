@@ -1,0 +1,14 @@
+---
+const {
+    projectLink,
+    linkName,
+    linkIcon
+} = Astro.props;
+---
+<div class="w-full flex justify-center items-center gap-5 my-5 text-2xl">
+    <a href={ projectLink } target="_blank" class="text-accent text-center hover:underline">
+        { linkName }
+    </a>
+
+    {linkIcon}
+</div>

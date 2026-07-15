@@ -3,5 +3,15 @@
         "name": "Python",
         "description": "Currently learning Python web development and Machine Learning.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+    },
+    {
+        "name": "Laravel",
+        "description": "As now I have some apps made in Laravel, now I am learning more deeply Laravel for backend development.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+    },
+    {
+        "name": "Angular",
+        "description": "I am learning Angular for building web applications.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
     }
 ]

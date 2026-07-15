@@ -7,6 +7,7 @@
     --secondary-text-color: #8b949e;
     --accent-color: #58a6ff;
     --secondary-accent-color: #366ece;
+    --tertiary-accent-color: #1d2e4d;
     --danger-color: #872d2d;
     --secondary-danger-color: #531b1b;
 }
@@ -18,6 +19,7 @@
     --color-secondary-text: var(--secondary-text-color);
     --color-accent: var(--accent-color);
     --color-secondary-accent: var(--secondary-accent-color);
+    --color-tertiary-accent: var(--tertiary-accent-color);
     --color-danger: var(--danger-color);
     --color-secondary-danger: var(--secondary-danger-color);
 }

@@ -1,0 +1,10 @@
+---
+const {
+    navLink,
+    navTitle
+} = Astro.props;
+---
+
+<a href={"#" + navLink} class="py-5 px-8 hover:bg-primary hover:cursor-pointer transition-all border-b-2 border-transparent hover:border-accent duration-300 hover:inset-shadow-accent-sm">
+    {navTitle}
+</a>

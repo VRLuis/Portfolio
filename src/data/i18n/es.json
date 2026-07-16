@@ -1,0 +1,32 @@
+{
+    "pageTitle": "Luis Villar Roldán | Desarrollador Fullstack",
+    "nav": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "learning": "Aprendizaje",
+        "certificates": "Certificados"
+    },
+    "sections": {
+        "experienceTitle": "Experiencia y Formación",
+        "formationTitle": "Formación",
+        "learningTitle": "Actualmente Aprendiendo",
+        "projectsTitle": "Proyectos",
+        "certificatesTitle": "Certificados"
+    },
+    "presentation": {
+        "subtitle": "-- Desarrollador FullStack --"
+    },
+    "buttons": {
+        "viewCertificate": "Ver Certificado",
+        "moreInfo": "Más información +",
+        "close": "Cerrar",
+        "webLink": "Enlace Web",
+        "sourceLink": "Enlace Fuente",
+        "progress": "En progreso"
+    },
+    "experience": {
+        "milestones": "Hitos",
+        "infoTitle": "Información sobre la experiencia"
+    }
+}

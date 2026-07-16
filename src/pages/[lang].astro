@@ -7,8 +7,15 @@ import Learning from '../components/sections/Learning.astro';
 import Projects from '../components/sections/Projects.astro';
 import Certificates from '../components/sections/Certificates.astro';
 
-const lang = 'en';
-const locale = 'en';
+export async function getStaticPaths() {
+    return [
+        { params: { lang: 'es' } },
+        { params: { lang: 'en' } }
+    ];
+}
+
+const { lang } = Astro.params;
+const locale = lang === 'en' ? 'en' : 'es';
 
 const translations = await import(`../data/i18n/${locale}.json`);
 const experienceData = await import(`../data/${locale}/experience.json`);

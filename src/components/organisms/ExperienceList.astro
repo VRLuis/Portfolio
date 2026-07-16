@@ -1,7 +1,7 @@
 ---
 import ExperienceCard from "../molecules/ExperienceCard.astro";
 
-const { experiences = [] } = Astro.props;
+const { experiences = [], translations } = Astro.props;
 ---
 
 <div class="mt-8 flex flex-wrap gap-4 justify-around">
@@ -16,6 +16,7 @@ const { experiences = [] } = Astro.props;
             experienceTechnologies={experience.experienceTechnologies}
             companyLogo={experience.companyLogo}
             milestones={experience.milestones}
+            translations={translations}
         />
     ))}
 </div>

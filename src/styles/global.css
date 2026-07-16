@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #0d1117;
-    --card-color: #161b22;
+    --card-color: #161b22c3;
     --main-text-color: #c9d1d9;
     --secondary-text-color: #8b949e;
     --accent-color: #58a6ff;
@@ -10,6 +10,20 @@
     --tertiary-accent-color: #1d2e4d;
     --danger-color: #872d2d;
     --secondary-danger-color: #531b1b;
+
+    --neon-blue-soft: rgba(88, 166, 255, 0.18);
+    --neon-blue-medium: rgba(88, 166, 255, 0.25);
+    --neon-blue-strong: rgba(88, 166, 255, 0.35);
+    --neon-purple-soft: rgba(248, 100, 255, 0.1);
+    --neon-purple-medium: rgba(248, 100, 255, 0.24);
+    --neon-purple-glow: rgba(255, 82, 222, 0.18);
+    --neon-grid-blue: rgba(88, 166, 255, 0.08);
+    --neon-grid-purple: rgba(248, 100, 255, 0.06);
+    --neon-overlay-opacity: 0.45;
+    --neon-blur: 5rem;
+    --neon-grid-size: 16rem;
+    --profile-shadow-soft: 0 20px 40px var(--neon-blue-medium), 0 0 60px var(--neon-purple-soft);
+    --profile-shadow-strong: 0 30px 60px var(--neon-blue-strong), 0 0 90px var(--neon-purple-glow);
 }
 
 @theme {
@@ -44,7 +58,7 @@ html {
 
 *::-webkit-scrollbar-thumb {
     background-color: var(--color-accent);
-    border-radius: 9999px;
+    border-radius: 100%;
     border: 2px solid var(--color-primary);
 }
 
@@ -54,4 +68,43 @@ html {
 
 *::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    background-image:
+        radial-gradient(circle at 15% 12%, var(--neon-blue-soft), transparent 14%),
+        radial-gradient(circle at 85% 22%, var(--neon-purple-medium), transparent 12%),
+        radial-gradient(circle at 50% 88%, var(--neon-purple-soft), transparent 18%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::before {
+    background-image:
+        radial-gradient(circle at 20% 14%, var(--neon-blue-medium), transparent 14%),
+        radial-gradient(circle at 82% 18%, var(--neon-purple-medium), transparent 14%);
+    filter: blur(var(--neon-blur));
+    opacity: 0.9;
+}
+
+body::after {
+    background-image:
+        linear-gradient(var(--neon-grid-blue) 1px, transparent 1px),
+        linear-gradient(90deg, var(--neon-grid-purple) 1px, transparent 1px);
+    background-size: var(--neon-grid-size) var(--neon-grid-size);
+    mix-blend-mode: screen;
+    opacity: var(--neon-overlay-opacity);
 }

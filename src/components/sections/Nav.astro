@@ -1,14 +1,21 @@
 ---
 import '../../styles/global.css';
 import NavLink from '../atoms/NavLink.astro';
+const { nav, lang } = Astro.props;
 ---
 
 <nav class="bg-card text-main-text mt-0 px-5 flex justify-center sticky top-0 w-7/10 mx-auto rounded-xl">
-    <div class="flex justify-between w-2/3">
-        <NavLink navLink="about" navTitle="About me"/>
-        <NavLink navLink="experience" navTitle="Experience"/>
-        <NavLink navLink="projects" navTitle="Projects"/>
-        <NavLink navLink="learning" navTitle="Learning"/>
-        <NavLink navLink="certificates" navTitle="Certificates"/>
+    <div class="flex justify-between items-center w-3/4">
+        <div class="flex gap-5">
+            <NavLink navLink="about" navTitle={nav.about} />
+            <NavLink navLink="experience" navTitle={nav.experience} />
+            <NavLink navLink="projects" navTitle={nav.projects} />
+            <NavLink navLink="learning" navTitle={nav.learning} />
+            <NavLink navLink="certificates" navTitle={nav.certificates} />
+        </div>
+        <div class="flex gap-3">
+            <a href="/es" class={lang === 'es' ? 'font-bold underline' : 'hover:underline'}>ES</a>
+            <a href="/" class={lang === 'en' ? 'font-bold underline' : 'hover:underline'}>EN</a>
+        </div>
     </div>
 </nav>

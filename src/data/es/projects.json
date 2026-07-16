@@ -1,0 +1,51 @@
+[
+    {
+        "projectName": "Simulación de accidentes",
+        "projectDescription": "Este proyecto se realizó durante una entrevista de trabajo. Una simulación para modelar y analizar accidentes de tráfico. Al colocar vehículos en un tablero virtual, podemos estudiar la dinámica de las colisiones y su impacto en la seguridad vial. Este proyecto busca aportar información para la prevención de accidentes y mejorar las medidas de seguridad en las carreteras.",
+        "projectImage": "accident-simulation.png",
+        "projectLink": "https://github.com/VRLuis/simulador-accidentes",
+        "projectWeb": "https://vrluis.github.io/simulador-accidentes/",
+        "projectTechnologies": [
+            "React",
+            "React-Konva",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "TailwindCSS"
+        ],
+        "inProgress": false
+    },
+    {
+        "projectName": "Gestión de intervenciones",
+        "projectDescription": "Este proyecto se realizó durante una entrevista de trabajo. Una aplicación web para gestionar intervenciones de tráfico. Permite a los usuarios crear, actualizar y eliminar intervenciones, así como ver el historial de intervenciones y generar informes. La aplicación está construida con React y utiliza una API REST para la gestión de datos.",
+        "projectImage": "intervention-management.png",
+        "projectLink": "https://github.com/VRLuis/gestion-intervenciones",
+        "projectWeb": "https://vrluis.github.io/gestion-intervenciones/",
+        "projectTechnologies": [
+            "React",
+            "Node Js",
+            "Express",
+            "Javascript",
+            "HTML",
+            "CSS",
+            "TailwindCSS"
+        ],
+        "inProgress": false
+    },
+    {
+        "projectName": "GGC (Great Games Connect)",
+        "projectDescription": "Una red social hecha por gamers para gamers. Un lugar donde puedes encontrar gente para jugar, compartir tus logros y conectar con otros jugadores. La aplicación está construida con Angular y usa una API REST para la gestión de datos hecha en Laravel. Puedes crear tus listas de juegos, hacer reseñas, publicaciones, comentarios y más. También puedes encontrar personas para jugar buscando sus juegos favoritos.",
+        "projectImage": "ggc.png",
+        "projectLink": "",
+        "projectWeb": "",
+        "projectTechnologies": [
+            "Angular",
+            "Laravel",
+            "AWS",
+            "Terraform",
+            "Github Actions",
+            "Docker"
+        ],
+        "inProgress": true
+    }
+]

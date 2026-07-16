@@ -4,13 +4,13 @@
         "companyLogo": "obi-logo.jpeg",
         "experienceTitle": "Cloud Infrastructure and Platform Engineer Trainee",
         "experienceDescription": [
-            "Managed Kubernetes clusters across AWS and GCP to ensure high availability for enterprise services.",
-            "Applied AI-Driven Development to standardize code quality and streamline large-scale infrastructure.",
-            "Developed 'Service-Generator', an AI-powered tool that automated service creation and optimized internal workflows."
+            "Gestioné clústeres de Kubernetes en AWS y GCP para asegurar alta disponibilidad de servicios empresariales.",
+            "Apliqué Desarrollo impulsado por IA para estandarizar la calidad del código y optimizar infraestructuras a gran escala.",
+            "Desarrollé 'Service-Generator', una herramienta potenciada por IA que automatiza la creación de servicios y optimiza los flujos de trabajo internos."
         ],
         "experienceDateStart": "02/2026",
         "experienceDateEnd": "05/2026",
-        "experienceLocation": "Köln, Germany",
+        "experienceLocation": "Colonia, Alemania",
         "experienceTechnologies": [
             "Arquitectura de software",
             "Desarrollo de software con IA",
@@ -22,7 +22,7 @@
         "milestones": [
             {
                 "milestoneName": "Service-Generator",
-                "milestoneDescription": "An AI-powered tool that automates service creation and optimizes internal workflows.",
+                "milestoneDescription": "Una herramienta potenciada por IA que automatiza la creación de servicios y optimiza los flujos de trabajo internos.",
                 "milestoneTechnologies": [
                     "React",
                     "OpenAI API",
@@ -39,13 +39,13 @@
         "companyLogo": "properly-logo.jpeg",
         "experienceTitle": "FullStack Developer",
         "experienceDescription": [
-            "Developed 3 CRUD modules using Jmix and SpringBoot, integrating PostgreSQL; improved internal dataworkflows and reduced manual data-entry steps.",
-            "Implemented backend REST endpoints and collaborated on ERP data models and business logic.",
-            "Performed code reviews and participated in sprint planning and deliveries."
+            "Desarrollé 3 módulos CRUD usando Jmix y SpringBoot, integrando PostgreSQL; mejoré los flujos de datos internos y reduje pasos de entrada de datos manual.",
+            "Implementé endpoints REST en el backend y colaboré en los modelos de datos y la lógica de negocio del ERP.",
+            "Realicé revisiones de código y participé en la planificación y entrega de sprints."
         ],
         "experienceDateStart": "04/2025",
         "experienceDateEnd": "09/2025",
-        "experienceLocation": "Malaga, Spain",
+        "experienceLocation": "Málaga, España",
         "experienceTechnologies": [
             "JavaScript",
             "jmix",
@@ -56,7 +56,7 @@
             "Java",
             "Springboot",
             "Aplicaciones web",
-            "Diseño de la interfaz de usuario",
+            "Diseño de interfaz de usuario",
             "Desarrollo de API",
             "XML",
             "HTML5",
@@ -65,7 +65,7 @@
         "milestones": [
             {
                 "milestoneName": "AI Readiness Assessment Tool",
-                "milestoneDescription": "An AI-powered tool that automates the bills reading process by automating the data entry and validation steps.",
+                "milestoneDescription": "Una herramienta potenciada por IA que automatiza el proceso de lectura de facturas al automatizar la entrada y validación de datos.",
                 "milestoneTechnologies": [
                     "Jmix",
                     "Java",
@@ -81,13 +81,13 @@
         "companyLogo": "default-company-logo.png",
         "experienceTitle": "Auxiliar informático",
         "experienceDescription": [
-            "Designed and implemented desktop UI componentsand features for internal applications.",
-            "Performed debugging, testing and collaborated withthe team to improve overall user experience.",
-            "Contributed to migration and modularization efforts across several projects."
+            "Diseñé e implementé componentes y funcionalidades de interfaz para aplicaciones de escritorio internas.",
+            "Realicé depuración, pruebas y colaboré con el equipo para mejorar la experiencia de usuario.",
+            "Contribuí a los esfuerzos de migración y modularización en varios proyectos."
         ],
         "experienceDateStart": "06/2024",
         "experienceDateEnd": "08/2024",
-        "experienceLocation": "Puente Genil, Cordoba, Spain",
+        "experienceLocation": "Puente Genil, Córdoba, España",
         "experienceTechnologies": [
             "Implementación de software",
             "Soporte técnico",
@@ -95,7 +95,7 @@
             "JSON",
             "Gestión informática",
             "Resolución colaborativa de problemas",
-            "Diseño de la interfaz de usuario",
+            "Diseño de interfaz de usuario",
             "XML",
             "HTML5"
         ]

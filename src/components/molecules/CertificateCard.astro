@@ -3,7 +3,8 @@ const {
     certificateName, 
     certificateDescription, 
     certificateImage, 
-    certificateLink 
+    certificateLink,
+    translations
 } = Astro.props;
 ---
 
@@ -15,6 +16,6 @@ const {
 
     <div class="col-span-2 items-center justify-center flex flex-col gap-2">
         <p class="text-xl">{certificateDescription}</p>
-        <a href={certificateLink} target="_blank" rel="noopener noreferrer" class="text-accent hover:underline text-lg">View Certificate</a>
+        <a href={certificateLink} target="_blank" rel="noopener noreferrer" class="text-accent hover:underline text-lg">{translations.buttons.viewCertificate}</a>
     </div>
 </div>

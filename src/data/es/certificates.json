@@ -1,0 +1,26 @@
+[
+    {
+        "certificateName": "OpenWebinars - Figma",
+        "certificateDescription": "Certificado de finalización del curso de Figma en OpenWebinars. Este curso cubre los fundamentos de Figma, una herramienta popular para crear interfaces de usuario y prototipos.",
+        "certificateImage": "https://openwebinars.net/certificacion/buQaJHFO?type=png",
+        "certificateLink": "https://openwebinars.net/certificacion/buQaJHFO?type=png"
+    },
+    {
+        "certificateName": "Certificado de Inglés B2 Cambridge",
+        "certificateDescription": "Certificado de finalización del curso de inglés B2 de Cambridge.",
+        "certificateImage": "b2-certificate.jpeg",
+        "certificateLink": "https://www.linkedin.com/in/luis-villar-rold%C3%A1n-28826227a/details/certifications/"
+    },
+    {
+        "certificateName": "Redes Básicas - Cisco",
+        "certificateDescription": "Certificado de finalización del curso de Redes Básicas en Cisco Networking Academy. Este curso cubre los fundamentos de redes, incluidos protocolos de red, topologías y seguridad.",
+        "certificateImage": "cisco-network-certificate.png",
+        "certificateLink": "https://www.credly.com/badges/bedd2b72-fec2-4982-b06a-be58ce1b8878/linked_in_profile"
+    },
+    {
+        "certificateName": "Diseño Web Responsivo - FreeCodeCamp",
+        "certificateDescription": "Certificado de finalización del curso de Diseño Web Responsivo en FreeCodeCamp. Este curso cubre los fundamentos del diseño web, incluidos HTML, CSS y principios de diseño responsive.",
+        "certificateImage": "web-responsive-certificate.png",
+        "certificateLink": "https://www.freecodecamp.org/certification/fccea4f317a-f1ef-4df7-b4fd-072b06336424/responsive-web-design"
+    }
+]

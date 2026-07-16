@@ -1,16 +1,17 @@
 ---
 import '../styles/global.css';
+const { lang = 'en', pageTitle = '' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Portfolio</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body class="bg-primary">
 		<slot />

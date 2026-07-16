@@ -1,0 +1,16 @@
+[
+    {
+        "centerName": "CPIFP Alan Turing",
+        "formationName": "Título Superior de Técnico en Desarrollo de Aplicaciones Web",
+        "startDate": "09/2024",
+        "endDate": "06/2026",
+        "formationLocation": "Málaga, España"
+    },
+    {
+        "centerName": "IES Herrera",
+        "formationName": "Título Medio de Formación Profesional en Sistemas y Redes Informáticas",
+        "startDate": "09/2022",
+        "endDate": "06/2024",
+        "formationLocation": "Herrera, Sevilla, España"
+    }
+]

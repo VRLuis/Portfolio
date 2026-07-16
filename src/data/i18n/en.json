@@ -1,0 +1,32 @@
+{
+    "pageTitle": "Luis Villar Roldán | Fullstack Developer",
+    "nav": {
+        "about": "About me",
+        "experience": "Experience",
+        "projects": "Projects",
+        "learning": "Learning",
+        "certificates": "Certificates"
+    },
+    "sections": {
+        "experienceTitle": "Experience and Formation",
+        "formationTitle": "Formation",
+        "learningTitle": "Currently Learning",
+        "projectsTitle": "Projects",
+        "certificatesTitle": "Certificates"
+    },
+    "presentation": {
+        "subtitle": "-- FullStack developer --"
+    },
+    "buttons": {
+        "viewCertificate": "View Certificate",
+        "moreInfo": "More info +",
+        "close": "Close",
+        "webLink": "Web Link",
+        "sourceLink": "Source Link",
+        "progress": "In progress"
+    },
+    "experience": {
+        "milestones": "Milestones",
+        "infoTitle": "Info about the experience"
+    }
+}

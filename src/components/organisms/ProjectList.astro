@@ -1,7 +1,7 @@
 ---
 import ProjectCard from "../molecules/ProjectCard.astro";
 
-const { projects = [] } = Astro.props;
+const { projects = [], translations } = Astro.props;
 ---
 
 <div class="mt-8 grid grid-cols-2 gap-4 justify-around w-full">
@@ -14,6 +14,7 @@ const { projects = [] } = Astro.props;
             projectWeb={project.projectWeb}
             projectTechnologies={project.projectTechnologies}
             inProgress={project.inProgress}
+            translations={translations}
         />
     ))}
 </div>

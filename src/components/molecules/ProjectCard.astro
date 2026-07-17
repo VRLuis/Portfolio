@@ -15,9 +15,10 @@ const {
 } = Astro.props;
 
 const basePath = import.meta.env.BASE_URL || '/';
+const normalizedBasePath = basePath.endsWith('/') ? basePath : `${basePath}/`;
 const projectImageSrc = projectImage?.startsWith('http') || projectImage?.startsWith('//')
     ? projectImage
-    : `${basePath}${projectImage}`;
+    : `${normalizedBasePath}${projectImage}`;
 ---
 
 <div class="w-full md:w-4/5 bg-card p-5 rounded-lg shadow-lg hover:shadow-xl transition-all grid-span-1 shadow-secondary-accent mx-auto my-2">

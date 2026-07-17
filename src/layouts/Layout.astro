@@ -2,6 +2,7 @@
 import '../styles/global.css';
 const { lang = 'en', pageTitle = '' } = Astro.props;
 const basePath = import.meta.env.BASE_URL || '/';
+const normalizedBasePath = basePath.endsWith('/') ? basePath : `${basePath}/`;
 ---
 
 <!doctype html>
@@ -9,8 +10,8 @@ const basePath = import.meta.env.BASE_URL || '/';
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={`${basePath}favicon.png`} />
-		<link rel="icon" href={`${basePath}favicon.png`} />
+		<link rel="icon" type="image/svg+xml" href={`${normalizedBasePath}favicon.png`} />
+		<link rel="icon" href={`${normalizedBasePath}favicon.png`} />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 	</head>

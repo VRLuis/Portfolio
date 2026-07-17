@@ -6,9 +6,10 @@ const {
 } = Astro.props;
 
 const basePath = import.meta.env.BASE_URL || '/';
+const normalizedBasePath = basePath.endsWith('/') ? basePath : `${basePath}/`;
 const learningIconSrc = learningIcon?.startsWith('http') || learningIcon?.startsWith('//')
     ? learningIcon
-    : `${basePath}${learningIcon}`;
+    : `${normalizedBasePath}${learningIcon}`;
 ---
 
 <div class="w-full bg-card p-5 rounded-lg shadow-lg hover:shadow-xl transition-all shadow-secondary-accent">

@@ -4,7 +4,7 @@ import FormationCard from "../molecules/FormationCard.astro";
 const { formations = [] } = Astro.props;
 ---
 
-<div class="mt-8 flex flex-wrap gap-4 justify-around">
+<div class="mt-8 grid grid-cols-1 gap-4 w-full">
     {formations.map((formation: FormationInterface) => (
         <FormationCard
             centerName={formation.centerName}

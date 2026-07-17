@@ -4,7 +4,7 @@ import ProjectCard from "../molecules/ProjectCard.astro";
 const { projects = [], translations } = Astro.props;
 ---
 
-<div class="mt-8 grid grid-cols-2 gap-4 justify-around w-full">
+<div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 justify-around w-full">
     {projects.map((project: ProjectInterface) => (
         <ProjectCard
             projectName={project.projectName}

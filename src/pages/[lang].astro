@@ -6,6 +6,7 @@ import Experience from '../components/sections/Experience.astro';
 import Learning from '../components/sections/Learning.astro';
 import Projects from '../components/sections/Projects.astro';
 import Certificates from '../components/sections/Certificates.astro';
+import Footer from '../components/sections/Footer.astro';
 
 export async function getStaticPaths() {
     return [
@@ -33,4 +34,5 @@ const contactData = await import(`../data/${locale}/contact.json`);
     <Projects translations={translations.default} projects={projectsData.default} />
     <Learning translations={translations.default} learningData={learningData.default} />
     <Certificates translations={translations.default} certificates={certificatesData.default} />
+    <Footer />
 </Layout>

@@ -4,7 +4,7 @@ import LearningCard from "../molecules/LearningCard.astro";
 const { learningData = [] } = Astro.props;
 ---
 
-<div class="mt-8 flex flex-wrap gap-4 justify-around">
+<div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 w-full">
     {learningData.map((learning: LearningInterface) => (
         <LearningCard
             learningName={learning.name}

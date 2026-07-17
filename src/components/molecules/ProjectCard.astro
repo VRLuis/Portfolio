@@ -17,7 +17,7 @@ const {
 
 <div class="w-full md:w-4/5 bg-card p-5 rounded-lg shadow-lg hover:shadow-xl transition-all grid-span-1 shadow-secondary-accent mx-auto my-2">
     <h1 class="text-2xl text-center font-bold mb-5">{ projectName }</h1>
-    <img src={ projectImage } alt={ projectName } class="w-100 mx-auto my-5 rounded-lg"/>
+    <img src={`/` + projectImage} alt={ projectName } class="w-100 mx-auto my-5 rounded-lg"/>
 
     <div class="w-full flex justify-center my-5">
         { inProgress ? <ProgressBudget progressText={translations.buttons.progress}/> : null }

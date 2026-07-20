@@ -7,6 +7,7 @@ import Learning from '../components/sections/Learning.astro';
 import Projects from '../components/sections/Projects.astro';
 import Certificates from '../components/sections/Certificates.astro';
 import Footer from '../components/sections/Footer.astro';
+import Technologies from '../components/sections/Technologies.astro';
 
 export async function getStaticPaths() {
     return [
@@ -23,6 +24,7 @@ const experienceData = await import(`../data/${locale}/experience.json`);
 const formationData = await import(`../data/${locale}/formation.json`);
 const learningData = await import(`../data/${locale}/learning.json`);
 const projectsData = await import(`../data/${locale}/projects.json`);
+const techData = await import(`../data/${locale}/technologies.json`);
 const certificatesData = await import(`../data/${locale}/certificates.json`);
 const contactData = await import(`../data/${locale}/contact.json`);
 ---
@@ -32,6 +34,7 @@ const contactData = await import(`../data/${locale}/contact.json`);
     <Nav translations={translations.default} lang={lang} nav={translations.default.nav} />
     <Experience translations={translations.default} experienceData={experienceData.default} formationData={formationData.default} />
     <Projects translations={translations.default} projects={projectsData.default} />
+    <Technologies translations={translations.default} techData={techData.default}/>
     <Learning translations={translations.default} learningData={learningData.default} />
     <Certificates translations={translations.default} certificates={certificatesData.default} />
     <Footer />

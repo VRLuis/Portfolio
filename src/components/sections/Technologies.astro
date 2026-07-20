@@ -1,0 +1,21 @@
+---
+import SectionHeader from "../atoms/SectionHeader.astro";
+import TechnologiesCard from "../molecules/TechnologiesCard.astro";
+const { translations, techData } = Astro.props;
+---
+
+<section id="tech" class="w-full md:w-7/10 mx-auto text-main-text mt-20 px-4 md:px-0">
+    <SectionHeader 
+        sectionTitle={translations.sections.techTitle}
+        sectionIcon={<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-topology-star-3"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M18 5a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M10 5a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M6 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M18 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M14 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M22 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0" /><path d="M6 12h4" /><path d="M14 12h4" /><path d="M15 7l-2 3" /><path d="M9 7l2 3" /><path d="M11 14l-2 3" /><path d="M13 14l2 3" /></svg>}
+    />
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10">
+        { techData.map((techCategory: any) => (
+            <TechnologiesCard
+                technologiesName={techCategory.techTitle}
+                technologies={Array.isArray(techCategory.tech) ? techCategory.tech : []}
+            />
+        )) }
+    </div>
+</section>

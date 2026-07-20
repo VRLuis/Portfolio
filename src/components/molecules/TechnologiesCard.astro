@@ -1,0 +1,21 @@
+---
+import TechIcon from "../atoms/TechIcon.astro"
+
+const {
+    technologiesName,
+    technologies = [],
+} = Astro.props
+
+const techList = Array.isArray(technologies) ? technologies : []
+---
+
+<div class="bg-card py-2 px-5 rounded-xl">
+    <h1 class="text-2xl text-center underline my-5">{technologiesName}</h1>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 col-span-1 gap-2">
+        {techList.map((tech: string) => (
+            <TechIcon techIcon={tech}/>
+        ))}
+    </div>
+    
+</div>

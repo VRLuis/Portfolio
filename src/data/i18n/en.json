@@ -4,6 +4,7 @@
         "about": "About me",
         "experience": "Experience",
         "projects": "Projects",
+        "tech": "Technologies",
         "learning": "Learning",
         "certificates": "Certificates"
     },
@@ -12,7 +13,8 @@
         "formationTitle": "Formation",
         "learningTitle": "Currently Learning",
         "projectsTitle": "Projects",
-        "certificatesTitle": "Certificates"
+        "certificatesTitle": "Certificates",
+        "techTitle": "Technologies"
     },
     "presentation": {
         "subtitle": "-- FullStack developer --"

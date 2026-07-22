@@ -1,7 +1,7 @@
 [
     {
-        "projectName": "Accident simulation",
-        "projectDescription": "This project was done during a job interview. A simulation to model and analyze traffic accidents. By placing vehicles in a virtual board, we can study the dynamics of collisions and their impact on vehicle safety. This project aims to provide insights into accident prevention and improve road safety measures.",
+        "projectName": "Accident Simulation",
+        "projectDescription": "This project was created during a job interview. A simulation to model and analyze traffic accidents. By placing vehicles on a virtual board, we can study collision dynamics and their impact on road safety. This project aims to provide insights for accident prevention and improve safety measures on highways.",
         "projectImage": "accident-simulation.png",
         "projectLink": "https://github.com/VRLuis/simulador-accidentes",
         "projectWeb": "https://vrluis.github.io/simulador-accidentes/",
@@ -17,7 +17,7 @@
     },
     {
         "projectName": "Intervention Management",
-        "projectDescription": "This project was done during a job interview. A web application for managing interventions traffic interventions. It allows users to create, update and delete interventions, as well as view the history of interventions and generate reports. The application is built with React and uses a REST API for data management.",
+        "projectDescription": "This project was created during a job interview. A web application to manage traffic interventions. It allows users to create, update, and delete interventions, as well as view intervention history and generate reports. The application is built with React and uses a REST API for data management.",
         "projectImage": "intervention-management.png",
         "projectLink": "https://github.com/VRLuis/gestion-intervenciones",
         "projectWeb": "https://vrluis.github.io/gestion-intervenciones/",
@@ -34,7 +34,7 @@
     },
     {
         "projectName": "GGC (Great Games Connect)",
-        "projectDescription": "A social media made by gamers for gamers. A place where you can find people to play with, share your achievements and connect with other gamers. The application is built with Angular and uses a REST API for data management made in Laravel. You can create your game lists, make reviews, posts, comments and more. You can also find people to play with by searching for their favorite games.",
+        "projectDescription": "A social network made by gamers for gamers. A place where you can find people to play with, share your achievements, and connect with other players. The application is built with Angular and uses a REST API for data management made in Laravel. You can create your game lists, write reviews, make posts, comment, and more. You can also find people to play with by searching for their favorite games.",
         "projectImage": "ggc.png",
         "projectLink": "",
         "projectWeb": "",

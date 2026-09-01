@@ -47,5 +47,21 @@
             "Docker"
         ],
         "inProgress": true
+    },
+    {
+        "projectName": "OrderNow",
+        "projectDescription": "A modern web application for managing restaurants, tables, menus, and orders through an administrative panel, with support for generating QR codes that allow customers to access the restaurant menu quickly. It has a Frontend management (Angular), Backend (Spring boot) and Client for QR scan (React).",
+        "projectImage": "ordernow-image.png",
+        "projectLink": "https://github.com/orgs/OrderNowRestaurant/repositories",
+        "projectWeb": "https://ordernowrestaurant.github.io/OrderNow/",
+        "projectTechnologies": [
+            "React",
+            "Angular",
+            "GCP",
+            "Spring boot",
+            "Typescript",
+            "Google Run"
+        ],
+        "inProgress": false
     }
 ]

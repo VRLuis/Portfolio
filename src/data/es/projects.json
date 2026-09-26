@@ -63,5 +63,19 @@
             "Google Run"
         ],
         "inProgress": false
+    },
+    {
+        "projectName": "Sync Notion <-> Todoist",
+        "projectDescription": "Sincronizador bidireccional entre Todoist y una base de datos de Notion, corre cada 5 min en Github Actions. Se sincronizan tareas, proyectos, fechas, prioridades y etiquetas. Si hay un conflicto todoist gana.",
+        "projectImage": "sync-notion-todoist.png",
+        "projectLink": "https://github.com/VRLuis/sync-notion-todoist",
+        "projectWeb": "",        
+        "projectTechnologies": [
+            "Python",
+            "Github Actions",
+            "Notion API",
+            "Todoist API"
+        ],
+        "inProgress": false
     }
 ]

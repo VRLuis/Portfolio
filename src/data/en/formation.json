@@ -1,5 +1,12 @@
 [
     {
+        "centerName": "IES Portada Alta",
+        "formationName": "Master AI & Big Data",
+        "startDate": "09/2026",
+        "endDate": "05/2027",
+        "formationLocation": "Malaga, Spain"
+    },
+    {
         "centerName": "CPIFP Alan Turing",
         "formationName": "Higher technical degree in web application development",
         "startDate": "09/2024",

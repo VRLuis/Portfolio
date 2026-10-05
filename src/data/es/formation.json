@@ -1,5 +1,12 @@
 [
     {
+        "centerName": "IES Portada Alta",
+        "formationName": "Máster IA & Big Data",
+        "startDate": "09/2026",
+        "endDate": "05/2027",
+        "formationLocation": "Málaga, Spain"
+    },
+    {
         "centerName": "CPIFP Alan Turing",
         "formationName": "Título Superior de Técnico en Desarrollo de Aplicaciones Web",
         "startDate": "09/2024",

@@ -1,17 +1,17 @@
 [
     {
         "name": "Python",
-        "description": "Currently learning Python web development and Machine Learning.",
+        "description": "Currently learning Python for web development and data science.",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
     },
     {
-        "name": "Laravel",
-        "description": "As now I have some apps made in Laravel, now I am learning Laravel deeplier for backend development.",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+        "name": "Machine Learning",
+        "description": "Exploring machine learning concepts, neural networks, and model training with Python libraries like TensorFlow and Scikit-learn.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
     },
     {
-        "name": "Angular",
-        "description": "I am learning Angular deeplier for building web applications.",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg"
+        "name": "Big Data",
+        "description": "Learning big data processing with Apache Spark, Hadoop, and data pipeline architectures for handling large-scale datasets.",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
     }
 ]

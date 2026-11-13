@@ -4,14 +4,26 @@ import FormationCard from "../molecules/FormationCard.astro";
 const { formations = [] } = Astro.props;
 ---
 
-<div class="mt-8 grid grid-cols-1 gap-4 w-full">
-    {formations.map((formation: FormationInterface) => (
-        <FormationCard
-            centerName={formation.centerName}
-            formationName={formation.formationName}
-            startDate={formation.startDate}
-            endDate={formation.endDate}
-            formationLocation={formation.formationLocation}
-        />
-    ))}
+<div class="mt-10 relative">
+    <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 border-l-2 border-dashed border-accent/40 transform md:-translate-x-1/2"></div>
+
+    <div class="flex flex-col gap-8">
+        {formations.map((formation: FormationInterface, index: number) => (
+            <div class={`relative flex items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}>
+                <div class="absolute left-4 md:left-1/2 w-4 h-4 rounded-full bg-accent border-2 border-primary shadow-md shadow-accent/50 transform -translate-x-1/2 z-10"></div>
+
+                <div class="hidden md:block md:w-1/2"></div>
+
+                <div class="ml-12 md:ml-0 md:w-1/2 md:px-8">
+                    <FormationCard
+                        centerName={formation.centerName}
+                        formationName={formation.formationName}
+                        startDate={formation.startDate}
+                        endDate={formation.endDate}
+                        formationLocation={formation.formationLocation}
+                    />
+                </div>
+            </div>
+        ))}
+    </div>
 </div>

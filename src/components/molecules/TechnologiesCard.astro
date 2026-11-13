@@ -9,13 +9,12 @@ const {
 const techList = Array.isArray(technologies) ? technologies : []
 ---
 
-<div class="bg-card py-2 px-5 rounded-xl">
-    <h1 class="text-2xl text-center underline my-5">{technologiesName}</h1>
+<div class="w-full bg-card p-8 rounded-lg border border-card shadow-md">
+    <h2 class="text-xl md:text-2xl font-bold mb-6">{technologiesName}</h2>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 col-span-1 gap-2">
+    <div class="flex flex-wrap gap-5 items-center justify-center">
         {techList.map((tech: string) => (
             <TechIcon techIcon={tech}/>
         ))}
     </div>
-    
 </div>

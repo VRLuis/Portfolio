@@ -21,7 +21,7 @@ const projectImageSrc = projectImage?.startsWith('http') || projectImage?.starts
     : `${normalizedBasePath}${projectImage}`;
 ---
 
-<div class="w-full md:w-4/5 bg-card p-5 rounded-lg shadow-lg hover:shadow-xl transition-all grid-span-1 shadow-secondary-accent mx-auto my-2">
+<div class="w-full md:w-4/5 bg-card p-5 rounded-lg transition-all grid-span-1 shadow-secondary-accent mx-auto my-2">
     <h1 class="text-2xl text-center font-bold mb-5">{ projectName }</h1>
     {
         projectImage != "" ?

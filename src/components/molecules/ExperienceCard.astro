@@ -27,7 +27,7 @@ const {
 		experienceLocation={experienceLocation}
 	/>
     
-    <button class="open-dialog-btn cursor-pointer bg-accent text-main-text font-bold px-4 py-2 w-full rounded-lg hover:bg-secondary-accent transition-all mt-5">{translations.buttons.moreInfo}</button>
+    <button class="open-dialog-btn cursor-pointer px-4 py-2 w-full rounded-md mt-5">{translations.buttons.moreInfo}</button>
     
     <dialog class="experience-dialog bg-card p-10 m-auto text-main-text w-full md:w-1/2 rounded-lg shadowd-lg shadow-secondary-accent">
         
@@ -73,7 +73,7 @@ const {
         </div>
         
         <div class="w-full h-fit flex justify-end mt-10">
-            <button class="close-dialog-btn bg-danger px-5 py-2 text-main-text rounded-xl cursor-pointer hover:bg-secondary-danger hover:translate-1 transition-all">Close</button>
+            <button class="close-dialog-btn cursor-pointer px-5 py-2 rounded-md">Close</button>
         </div>
     </dialog>
 </div>
@@ -106,6 +106,45 @@ const {
         });
     });
 </script>
+
+<style>
+    .open-dialog-btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: rgba(88, 166, 255, 0.1);
+        color: var(--accent-color);
+        border: 1px solid rgba(88, 166, 255, 0.2);
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .open-dialog-btn:hover {
+        background: rgba(88, 166, 255, 0.15);
+        border-color: rgba(88, 166, 255, 0.3);
+        transform: translateY(-1px);
+    }
+
+    .close-dialog-btn {
+        display: inline-block;
+        padding: 0.5rem 1.25rem;
+        background: var(--danger-color);
+        color: var(--main-text-color);
+        border: 1px solid var(--danger-color);
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .close-dialog-btn:hover {
+        background: var(--secondary-danger-color);
+        transform: translateY(-1px);
+    }
+</style>
 
 <style is:global>
   .experience-dialog {

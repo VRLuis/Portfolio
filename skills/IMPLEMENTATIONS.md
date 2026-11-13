@@ -27,12 +27,19 @@ Before implementing a feature, divide it into small, independent steps:
 - Do not create multiple components in a single change unless they are very small.
 - Test each component before moving to the next.
 
-#### 3. Incremental Progress
+#### 3. Bilingual Content Requirement
+- **Every implementation that introduces new content must provide both an English (`en`) and Spanish (`es`) version.**
+- When creating or updating data files in `src/data/`, always add the corresponding entries in both `src/data/en/` and `src/data/es/`.
+- When adding new UI strings (labels, buttons, headings), update both `src/data/i18n/en.json` and `src/data/i18n/es.json`.
+- Do not ship an implementation with placeholder or missing translations — both languages must be complete before the step is considered done.
+- If a translation is uncertain, use a clear placeholder (e.g., `"TODO_es"`) and flag it for review rather than leaving the key missing.
+
+#### 4. Incremental Progress
 - Commit or present each small implementation before starting the next.
 - Each step should leave the codebase in a working state.
 - Never leave the project in a broken or incomplete state.
 
-#### 4. Review Before Continuing
+#### 5. Review Before Continuing
 - After each implementation, review the code for:
   - Correctness: Does it work as intended?
   - Cleanliness: Is the code well-structured and readable?
@@ -52,5 +59,6 @@ Before implementing a feature, divide it into small, independent steps:
 ## Summary
 1. Plan small — break tasks into chunks under 400 lines.
 2. Implement one chunk at a time.
-3. Review each chunk before proceeding.
-4. Communicate if a task is larger than expected.
+3. Include both English and Spanish translations for every piece of content.
+4. Review each chunk before proceeding.
+5. Communicate if a task is larger than expected.

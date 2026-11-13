@@ -123,4 +123,34 @@ const certificateImageSrc = certificateImage?.startsWith('http') || certificateI
         border-color: rgba(88, 166, 255, 0.3);
         transform: translateY(-1px);
     }
+
+    @media (max-width: 400px) {
+        .certificate-summary {
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+        }
+
+        .certificate-title {
+            font-size: 1rem;
+        }
+
+        .certificate-thumbnail {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .certificate-chevron {
+            width: 16px;
+            height: 16px;
+        }
+
+        .certificate-description {
+            padding: 0 1rem;
+            font-size: 0.875rem;
+        }
+
+        .certificate-link {
+            margin: 0.75rem 1rem 1rem;
+        }
+    }
 </style>

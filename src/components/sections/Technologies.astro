@@ -28,6 +28,12 @@ const { translations, techData } = Astro.props;
         gap: 1rem;
     }
 
+    @media (max-width: 399px) {
+        .bento-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
     @media (min-width: 768px) {
         .bento-grid {
             grid-template-columns: 1.2fr 0.8fr;

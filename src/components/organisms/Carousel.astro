@@ -5,7 +5,7 @@ const { projects, translations } = Astro.props;
 ---
 
 <div class="relative w-full max-w-6xl mx-auto px-4" data-carousel data-total={projects.length}>
-    <div class="py-10 w-full">
+    <div class="py-10 w-full overflow-hidden">
         <div class="flex gap-8 transition-transform duration-500 ease-in-out" data-carousel-track>
             {projects.map((project, index) => (
                 <div class="carousel-slide flex-shrink-0" data-slide={index}>
@@ -102,6 +102,7 @@ const { projects, translations } = Astro.props;
     .carousel-slide {
         flex-shrink: 0;
         width: 580px;
+        max-width: calc(100vw - 3rem);
         opacity: 0.15;
         filter: brightness(0.4) blur(3px);
         transform: scale(0.8);

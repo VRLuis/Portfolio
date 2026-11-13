@@ -14,14 +14,143 @@ const certificateImageSrc = certificateImage?.startsWith('http') || certificateI
     : `${normalizedBasePath}${certificateImage}`;
 ---
 
-<div class="grid grid-cols-1 gap-4 md:grid-cols-[1fr_2fr] bg-card py-4 px-5 rounded-3xl shadow-lg shadow-secondary-accent">
-    <div class="flex flex-col items-center justify-center gap-4">
-        <h2 class="text-xl font-bold text-center md:text-left">{certificateName}</h2>
-        <img src={certificateImageSrc} alt={certificateName} class="w-2/3 md:w-full mt-2 rounded-lg shadow-md" />
+<details class="certificate-accordion">
+    <summary class="certificate-summary">
+        <span class="certificate-title">{certificateName}</span>
+        <img src={certificateImageSrc} alt={certificateName} class="certificate-thumbnail" />
+        <svg class="certificate-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </summary>
+    <div class="certificate-body">
+        <div class="certificate-body-inner">
+            <p class="certificate-description">{certificateDescription}</p>
+            <a href={certificateLink} target="_blank" rel="noopener noreferrer" class="certificate-link">{translations.buttons.viewCertificate}</a>
+        </div>
     </div>
+</details>
 
-    <div class="flex flex-col justify-center gap-3">
-        <p class="text-base md:text-xl">{certificateDescription}</p>
-        <a href={certificateLink} target="_blank" rel="noopener noreferrer" class="text-accent hover:underline text-lg">{translations.buttons.viewCertificate}</a>
-    </div>
-</div>
+<style>
+    .certificate-accordion {
+        background: var(--card-color);
+        border: 1px solid rgba(139, 148, 158, 0.1);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .certificate-accordion:hover {
+        border-color: rgba(88, 166, 255, 0.15);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .certificate-summary {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+        cursor: pointer;
+        list-style: none;
+        user-select: none;
+    }
+
+    .certificate-summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .certificate-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--main-text-color);
+    }
+
+    .certificate-thumbnail {
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+        border-radius: 0.375rem;
+        opacity: 0.85;
+    }
+
+    .certificate-chevron {
+        color: var(--accent-color);
+        transition: transform 0.3s ease;
+    }
+
+    .certificate-accordion[open] .certificate-chevron {
+        transform: rotate(180deg);
+    }
+
+    .certificate-body {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s ease;
+    }
+
+    .certificate-accordion[open] .certificate-body {
+        grid-template-rows: 1fr;
+    }
+
+    .certificate-body-inner {
+        overflow: hidden;
+    }
+
+    .certificate-description {
+        padding: 0 1.25rem;
+        margin: 0;
+        color: var(--main-text-color);
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .certificate-link {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.75rem 1.25rem 1rem;
+        background: rgba(88, 166, 255, 0.1);
+        color: var(--accent-color);
+        border: 1px solid rgba(88, 166, 255, 0.2);
+        border-radius: 0.375rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .certificate-link:hover {
+        background: rgba(88, 166, 255, 0.15);
+        border-color: rgba(88, 166, 255, 0.3);
+        transform: translateY(-1px);
+    }
+
+    @media (max-width: 400px) {
+        .certificate-summary {
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+        }
+
+        .certificate-title {
+            font-size: 1rem;
+        }
+
+        .certificate-thumbnail {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .certificate-chevron {
+            width: 16px;
+            height: 16px;
+        }
+
+        .certificate-description {
+            padding: 0 1rem;
+            font-size: 0.875rem;
+        }
+
+        .certificate-link {
+            margin: 0.75rem 1rem 1rem;
+        }
+    }
+</style>

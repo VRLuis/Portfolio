@@ -11,6 +11,9 @@
     --danger-color: #872d2d;
     --secondary-danger-color: #531b1b;
 
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Lora', Georgia, serif;
+
     --neon-blue-soft: rgba(88, 166, 255, 0.18);
     --neon-blue-medium: rgba(88, 166, 255, 0.25);
     --neon-blue-strong: rgba(88, 166, 255, 0.35);
@@ -74,6 +77,11 @@ body {
     background-color: var(--primary-color);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
 }
 
 body::after {

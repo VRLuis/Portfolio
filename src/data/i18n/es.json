@@ -25,7 +25,9 @@
         "close": "Cerrar",
         "webLink": "Enlace Web",
         "sourceLink": "Enlace Fuente",
-        "progress": "En progreso"
+        "progress": "En progreso",
+        "prevSlide": "Diapositiva anterior",
+        "nextSlide": "Siguiente diapositiva"
     },
     "experience": {
         "milestones": "Hitos",

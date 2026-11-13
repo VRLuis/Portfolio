@@ -25,7 +25,9 @@
         "close": "Close",
         "webLink": "Web Link",
         "sourceLink": "Source Link",
-        "progress": "In progress"
+        "progress": "In progress",
+        "prevSlide": "Previous slide",
+        "nextSlide": "Next slide"
     },
     "experience": {
         "milestones": "Milestones",
